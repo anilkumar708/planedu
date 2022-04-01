@@ -1,0 +1,192 @@
+/* Top Header Bar */
+.header-strip {
+    background: #004789;
+    color: white;
+    padding: 0px 20px;
+}
+@media (max-width: 768px) {
+  .header-strip {
+    background: #004789;
+    border-radius: 0px 0px 30px 30px;
+    color: white;
+    padding: 0px 20px;
+    margin: 0px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+.social-style {
+  padding-top: 10px;
+  font-size:15px !important;
+  color:white;
+  padding-right: 10px;
+}
+
+
+/* Navigation Bar */
+  .navbar {
+    background: transparent;
+    min-height: 113px;
+    top: 0px;
+    font-size: 18px;
+    width: auto;
+    border: none;
+    padding: 0px 0px;
+  }
+  .navbar-nav > li > a {
+    color: rgb(255, 255, 255);
+  }
+
+  .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #0047896b !important;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  @media (min-width: 768px) {
+    .navbar-nav {
+      position: relative;
+      right: -50%;
+    }
+    .navbar-nav > li {
+      position: relative;
+      left: -50%;
+    }
+    .navbar-nav > li a {
+      line-height: 113px;
+      vertical-align: middle;
+      padding: 0 24px;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-nav > li a {
+      padding: 0 48px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .navbar-nav > li a {
+      padding: 0 68px;
+    }
+  }
+
+
+  /* Home banner */
+  span {
+    background-color: #ffffff;
+    color: #197EBC;
+    ;
+  }
+.home-cont-center {
+  text-align: center;
+  color: white;
+  font-family: system-ui;
+  font-size: 16px;
+}
+.home-cont {
+  color: white;
+  font-family: system-ui;
+  font-size: 16px;
+}
+.para-1 {
+  padding-top: 10px;
+  font-family: system-ui;
+  font-size: 16px;
+}
+.home-para {
+  font-family: system-ui;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+.home-space {
+  padding: 150px 0px;
+}
+.home-heading {
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 700;
+  color: #197EBC;
+}
+.space {
+  margin: 100px 0px;
+}
+
+/* Section Starts Here */
+.first-section {
+    background-image:url(../img/home/home-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second-section {
+  background: linear-gradient(to bottom, #002147 100%, #fff 100%);
+  padding: 100px 0px;
+}
+
+.vl {
+  border-left: 3px solid rgb(255, 255, 255);
+}
+
+.home-bg1 {
+  background-image:url(../img/home/Background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home-service {
+  background-color: #002147;
+  height: 250px;
+}
+.mission {
+  background-image:url(../img/home/mission-vision.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+.MultiCarousel {
+	float: left;
+	overflow: hidden;
+	padding: 15px;
+	width: 100%;
+	position: relative;
+}
+.MultiCarousel .MultiCarousel-inner {
+	transition: 1s ease all;
+	float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item {
+	float: left;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+	position: absolute;
+	border-radius: 50%;
+	top: calc(50% - 20px);
+}
+/******* Bnt Full********
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+    position: absolute;
+    border-radius: 50%; 
+    height: 80%;
+    top: 24px;
+}**/
+
+.MultiCarousel .leftLst {
+	left: 0;
+}
+.MultiCarousel .rightLst {
+	right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+	pointer-events: none;
+	background: #ccc;
+}
